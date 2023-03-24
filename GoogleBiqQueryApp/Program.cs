@@ -22,6 +22,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "config.json");
 
 
 app.Run();
